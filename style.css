@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 72px;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+main {
+  /*background-color: rgb(198, 202, 202);*/
+  background-color: #eeeeee;
+}
+
+/*  модификаторы */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell-bacground-color {
+  background-color: #ffffff;
+}
+/*левый блок */
+
+.user-logo{
+  width: 24px;
+  height: 32px;
+}
+
+
+/*  центр страницы */
+.main-info {
+
+  display: flex;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 160px;
+
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.enter {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.enter__enter-user {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-info {
+  font-size: 14px;
+  opacity: 60%;
+}
+
+/* форма поиска на странице */
+.user-search {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+
+.user-search__form {
+  width: 420px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #2a2f37;
+  border: none;
+}
+
+.user-search__form::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.6;
+  padding-left: 16px;
+}
+
+form {
+  position: relative;
+
+}
+
+form::before {
+  content: url('images/search.svg');
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  opacity: 0.6;
+}
+
+.user-search__form-block {
+  gap: 12px;
+}
+
+.user-search__filter {
+  background-color: rgba(42, 47, 55, 0.08);
+  font-size: 14px;
+  padding: 8px 16px;
+  gap: 16px;
+}
+
+.user-search__order-number {
+  gap: 16px;
+}
+
+
+/*  сортировка списка*/
+
+.user-posts-name-sort {
+  display: grid;
+  /* Будет создано 4 колонки */
+  grid-template-columns: 7.5fr 3fr 3fr 2fr;
+  height: 40px;
+  align-items: center;
+  gap: 60px;
+  color: rgba(42, 47, 55, 0.6);
+  font-size: 12px;
+  padding-left: 24px;
+  padding-right: 92px;
+  margin-bottom: 8px;
+}
+
+/*  ячейка объявления  */
+.user-posts-cell {
+  display: grid;
+  /* Будет создано 5 кол-ок */
+  grid-template-columns: 7fr 3fr 3fr 1fr 0.5fr;
+  height: 80px;
+  align-items: center;
+  gap: 50px;
+  color: #2A2F37;
+  font-size: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 8px;
+}
+
+.posts-name {
+  width: 220px;
+}
+
+/*  Окно пользователя слева */
+.user-menu {
+  width: 263px;
+  background-color: #ffffff;
+}
+
+.user-menu__top {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid rgba(42, 47, 55, 0.1);
+  padding-left: 20px;
+}
+
+.user-name {
+  font-size: 16px;
+}
+
+.user-logo {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  margin: auto;
+}
+
+.letter {
+  background-color: rgba(0, 0, 0, 0.151);
+  width: 32px;
+  height: 32px;
+  padding: 4px 4px;
+}
+
+.user-posts {
+  height: 88px;
+  width: 867px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(42, 47, 55, 0.1);
+}
+
+.user-posts_add-post-btn {
+  width: 133px;
+  height: 40px;
+  background-color: blue;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.user-posts_add-post-btn:hover {
+  
+  border: 10px solid  #ffffff;
+  
+
+}
+.plus:hover{
+  fill: blue;
+}
+
+.user-menu__topic {
+  height: 40px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: 2px solid blue;
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+.user-menu{
+  position: relative;
+  padding-bottom: 40px;
+  min-height: 100px;
+}
+
+.exit {
+  position: absolute;
+  padding-left: 24px;
+  margin-top: auto;
+  margin-bottom: 40px;
+  bottom: 0;
+}
+
+
+/* Подвал сайта */
+.footer {
+  height: 208px;
+  font-size: 12px;
+  background-color: #2A2F37;
+  
+}
+
+.footer-top {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-logo__text-about {
+  border-left: 2px rgba(255, 255, 255, 0.6) solid;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 40px;
+  margin-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.social-web-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links:hover,
+.social-links:focus{
+  fill: aliceblue;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 24px;
+  line-height: 1.33;
+  opacity: 0.6;
+}
+
+.footer-bottom__link-reg {
+  text-decoration: underline;
+}
